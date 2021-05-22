@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $(".foto").click(function(){
+                $(this).hide();
+            });
+
+            $("button").click(function(){
+                $(".foto").show();
+            });
+        });
+    </script>
+    <style>
+        .foto{
+            width: 200px;
+            border: 2px solid blue;
+            border-radius: 10px;
+        }
+    </style>
+    <title>Ninja Desapareciendo</title>
+</head>
+<body>
+    <h1>Ninja Desapareciendo</h1>
+    <div class="row">
+        <div class="col">
+            <img class="foto" src="aidorucat.png" alt="aidorucat.png">
+            <img class="foto" src="chellocat.jpg" alt="chellocat.jpg">
+            <img class="foto" src="cherry.jpg" alt="cherry.jpg">
+            <img class="foto" src="codercat.jpg" alt="codercat.jpg">
+        </div>
+        <div class="col">
+            <img class="foto" src="daftpunk.gif" data-alt-src='daftpunk.gif'>
+            <img class="foto" src="ironcat.png" data-alt-src='ironcat.png'>
+            <img class="foto" src="linkcat.png" data-alt-src='linkcat.png'>
+            <img class="foto" src="mario.png" data-alt-src='mario.png'>
+        </div>
+        
+        <div class="col">
+            <button>Resetear</button>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
